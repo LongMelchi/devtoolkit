@@ -1,0 +1,36 @@
+# Go 编译产物
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+devtoolkit
+devtoolkit.exe
+
+# Go 测试与覆盖率
+*.test
+*.out
+coverage.html
+
+# IDE / 编辑器
+.vscode/
+.idea/
+*.swp
+*~
+
+# obsidian
+.obsidian
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+
+# 项目运行产物
+*.log
+backup/output/        # 备份工具的临时输出
+healthcheck/reports/  # 健康检查的实时报表
+tmp/
+
+# 环境变量
+.env
+.env.local
