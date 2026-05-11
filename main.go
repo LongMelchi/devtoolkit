@@ -37,8 +37,8 @@ func main() {
 		cmd.PrintVersion()
 		os.Exit(config.ExitOK)
 	// === 第2章追加 ===
-	// case "file":
-	//     cmd.HandleFile(os.Args[2:])
+	case "file":
+		cmd.HandleFile(os.Args[2:])
 
 	// === 第3章追加 ===
 	// case "data":

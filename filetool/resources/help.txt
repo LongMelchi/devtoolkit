@@ -1,0 +1,18 @@
+devtoolkit - 简易 DevOps 工具箱 (嵌入式帮助)
+============================================
+
+本帮助文本通过 //go:embed 指令嵌入到二进制中，
+即使把可执行文件单独拷到陌生机器，也能正常显示。
+
+可用命令:
+  file         文件操作
+  net          网络服务
+  proc         进程管理
+  healthcheck  服务健康检查 (扩展)
+  backup       文件备份 (扩展)
+  procmon      进程监控 (扩展)
+  config       配置中心 (扩展)
+  logagg       日志聚合 (扩展)
+  portscan     端口扫描 (扩展)
+
+更多信息: devtoolkit help <command>
