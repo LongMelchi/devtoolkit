@@ -45,8 +45,8 @@ func main() {
 		os.Exit(cmd.RunData(os.Args[2:]))
 
 	// === 第4章追加 ===
-	// case "net":
-	//     cmd.HandleNet(os.Args[2:])
+	case "net":
+		cmd.HandleNet(os.Args[2:])
 
 	// === 第5章追加 ===
 	// case "proc":
