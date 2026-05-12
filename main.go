@@ -41,8 +41,8 @@ func main() {
 		cmd.HandleFile(os.Args[2:])
 
 	// === 第3章追加 ===
-	// case "data":
-	//     os.Exit(cmd.RunData(os.Args[2:]))
+	case "data":
+		os.Exit(cmd.RunData(os.Args[2:]))
 
 	// === 第4章追加 ===
 	// case "net":

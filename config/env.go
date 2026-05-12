@@ -5,6 +5,7 @@ package config
 
 import (
 	"os"
+	"path/filepath"
 	"strconv"
 )
 
@@ -16,6 +17,7 @@ type Config struct {
 	Port     int    // 网络服务监听端口（DEVTOOLKIT_PORT）
 	LogLevel string // 日志级别（DEVTOOLKIT_LOG）：debug/info/warn/error
 	LogFile  string // 日志文件路径（DEVTOOLKIT_LOGFILE），空表示只打印到控制台
+	DataDir  string // 运行数据目录（DEVTOOLKIT_DATA_DIR），默认 ./data
 }
 
 // Load 读取所有支持的环境变量，并返回填充好的 Config。
@@ -27,6 +29,7 @@ func Load() *Config {
 		Port:     getEnvIntDefault("DEVTOOLKIT_PORT", 8080),
 		LogLevel: getEnvDefault("DEVTOOLKIT_LOG", "info"),
 		LogFile:  os.Getenv("DEVTOOLKIT_LOGFILE"), // 空字符串即可
+		DataDir:  getEnvDefault("DEVTOOLKIT_DATA_DIR", filepath.Join(".", "data")),
 	}
 }
 
