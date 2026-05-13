@@ -49,8 +49,8 @@ func main() {
 		cmd.HandleNet(os.Args[2:])
 
 	// === 第5章追加 ===
-	// case "proc":
-	//     cmd.HandleProc(os.Args[2:])
+	case "proc":
+		cmd.HandleProc(os.Args[2:])
 
 	// === 第6章追加：扩展子命令 ===
 	// case "healthcheck": cmd.HandleHealthcheck(os.Args[2:])
